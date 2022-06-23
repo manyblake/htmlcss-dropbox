@@ -1,0 +1,62 @@
+/* Reset Rules */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+ul, ol, menu {
+    list-style-type: none;
+}
+
+/* Modifiers */
+.marginleft--auto {
+    margin-left: auto;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    z-index: 99;
+}
+
+.header__logo-box {
+    padding: 24px 0;
+}
+
+.header__logo {
+    height: 32px;
+}
+
+header a {
+    text-decoration: none;
+    color: currentColor;
+}
+
+header nav {
+    display: flex;
+    align-items: center;
+}
+
+.header__link-box {
+    padding: 0 24px;
+}
+
+.link-box__dropbox-info, .link-box__dropbox-contacts {
+    display: flex;
+    gap: 20px;
+}
+
+main {
+    padding-top: 85px;
+}
+
+.hero {
+    
+    background-color: #b4d0e7;
+    height: 1000px;
+}
