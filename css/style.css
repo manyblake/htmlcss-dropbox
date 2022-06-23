@@ -18,6 +18,7 @@ ul, ol, menu {
 .button {
     text-decoration: none;
     padding: 12px;
+    text-align: center;
 }
 
 .button--blue {
@@ -27,7 +28,11 @@ ul, ol, menu {
 }
 
 .plan-card__specifics li + li {
-    margin: 20px 0;
+    margin: 24px 0;
+}
+
+.plan-card__advantages li + li {
+    margin: 24px 0;
 }
 
 /* Main header */
@@ -222,4 +227,15 @@ main {
 
 .plan-card__big {
     flex-basis: 100%;
+}
+
+.plan-card__container{
+    position: relative;
+}
+
+.plan-card__big .button {
+    position: absolute;
+    right: 24px;
+    top: 24px;
+    padding: 12px 32px;
 }
