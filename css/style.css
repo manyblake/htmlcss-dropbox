@@ -15,6 +15,17 @@ ul, ol, menu {
     margin-left: auto;
 }
 
+.button {
+    text-decoration: none;
+    padding: 12px;
+}
+
+.button--blue {
+    color: white;
+    background-color: #0061ff;
+}
+
+
 header {
     position: fixed;
     top: 0;
@@ -30,6 +41,7 @@ header {
 
 .header__logo {
     height: 32px;
+    padding: 0 24px;
 }
 
 header a {
@@ -48,15 +60,57 @@ header nav {
 
 .link-box__dropbox-info, .link-box__dropbox-contacts {
     display: flex;
-    gap: 20px;
+    gap: 24px;
 }
 
 main {
     padding-top: 85px;
 }
 
+.container-small {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.container-big {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
 .hero {
-    
     background-color: #b4d0e7;
-    height: 1000px;
+}
+
+.hero__title {
+    text-align: center;
+    font-size: 56px;
+    padding: 40px 0;
+    font-weight: 800;
+}
+
+.hero__card {
+    display: flex;
+    position: relative;
+}
+
+.hero-card__description {
+    width: 33%;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.hero-card__image {
+    position: absolute;
+    left: 40%;
+    top: 0;
+}
+
+.hero-card__image img {
+    width: 100%;
+}
+
+.hero-card__description i {
+    display: inline-block;
+    padding-top: 20px;
 }
