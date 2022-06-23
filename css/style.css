@@ -23,7 +23,11 @@ ul, ol, menu {
 .button--blue {
     color: white;
     background-color: #0061ff;
-    display: inline-block;
+    display: block;
+}
+
+.plan-card__specifics li + li {
+    margin: 20px 0;
 }
 
 /* Main header */
@@ -106,10 +110,11 @@ main {
 }
 
 .hero-card__description {
-    width: 33%;
+    width: 40%;
     display: flex;
     flex-direction: column;
     gap: 24px;
+    align-items: flex-start;
 }
 
 .hero-card__image {
@@ -178,4 +183,37 @@ main {
 .plan-card__duration {
     font-style: italic;
     padding-bottom: 32px;
+}
+
+.plan-card__specific {
+    display: flex;
+    align-items: baseline;
+    gap: 8px;
+}
+
+.plan-card__buy-now {
+    margin: 32px 0;
+}
+
+.plan-card__highlights:before {
+    content:"";
+    height: 2px;
+    width: 32px;
+    background-color: grey;
+    display: block;
+    margin-bottom: 8px;
+}
+
+.plan-card__highlights h3 {
+    margin: 32px 0;
+}
+
+.plan-card__advantage {
+    display: flex;
+    align-items: baseline;
+    gap: 8px;
+}
+
+.plan-card__advantage i {
+    color: #0061ff;
 }
