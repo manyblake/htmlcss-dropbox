@@ -13,7 +13,7 @@
 </head>
 
 <body>
-    <header>
+    <header class="main-header">
         <nav>
             <div class="header__logo-box">
                 <img class="header__logo" src="img/logo-small.png" alt="Logo Dropbox">
@@ -45,7 +45,7 @@
                         <a href="#">Accedi</a>
                     </li>
                     <li>
-                        <a class="button button-blue" href="#">Inizia</a>
+                        <a class="button button--blue" href="#">Inizia</a>
                     </li>
                 </ul>
             </div>
@@ -70,7 +70,40 @@
                         <img src="img/jumbo.png" alt="">
                     </div>
                 </div>
+            </div>
+        </section>
 
+        <section class="business-plan">
+            <div class="container-small">
+                <div class="business-plan__title">
+                    <h2>Trova il piano business che fa per te</h2>
+                </div>
+                <div>
+                    <form action="#">
+                        <input type="radio" id="monthly" name="fatturazione">
+                        <label for="monthly">Fatturazione mensile</label>
+                        <input type="radio" id="yearly" name="fatturazione">
+                        <label for="monthly">Fatturazione annuale</label>
+                    </form>
+
+                    <div class="business-plan__card plan-card__container">
+                        <header class="plan-card__target">
+                            Singolo
+                        </header>
+                        <div>
+                            <h3 class="plan-card__title">Professional</h3>
+                            <p class="plan-card__price"></p>
+                            <p class="plan-card__duration"></p>
+                            <ul class="plan-card__specifics">
+                                <li>1 utente</li>
+                                <li>5 TB di spazio di archiviazione sicuro</li>
+                                <li>Funzioni di produttività premium e condivisione file semplice e sicura</li>
+                            </ul>
+                            <a class="button button--blue" href="">Prova gratis per 30 giorni</a>
+                            <p>oppure</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
     </main>
