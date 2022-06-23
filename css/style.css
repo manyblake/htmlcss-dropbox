@@ -139,7 +139,7 @@ main {
 
 .business-plan__card {
     border: 1px solid black;
-    width: calc(100% / 3);
+    width: calc((100% - 64px) / 3);
 }
 
 .business-plan__title {
@@ -162,6 +162,8 @@ main {
 .plan-row {
     display: flex;
     justify-content: space-between;
+    gap: 32px;
+    flex-wrap: wrap;
 }
 
 .plan-card-header__title {
@@ -216,4 +218,8 @@ main {
 
 .plan-card__advantage i {
     color: #0061ff;
+}
+
+.plan-card__big {
+    flex-basis: 100%;
 }
