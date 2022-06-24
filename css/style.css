@@ -41,6 +41,39 @@ ul, ol, menu {
     margin: 24px 0;
 }
 
+.carousel__item--lightgreen {
+    background-color: #d1e9cd;
+}
+
+.carousel__item--reddishpurple {
+    background-color: #61082b;
+}
+
+.carousel__item--lightblue {
+    background-color: #0093ce;
+}
+
+.carousel__item--lightred {
+    background-color: #ff1c1c;
+}
+
+.carousel__item--darkred {
+    background-color: #d5001f;
+}
+
+.carousel__item--greyishcyan {
+    background-color: #b4d0e7;
+}
+
+.carousel__item--darkblue {
+    background-color: #0d2481;
+}
+
+.carousel__item--yellow {
+    background-color: #ffd830;
+}
+
+
 /* Main header */
 .main-header {
     position: fixed;
@@ -298,8 +331,10 @@ main {
     margin-bottom: 40px;
 }
 
+/* Quarta sezione (dropbox more) */
+
 .dropbox-more {
-margin-bottom: 64px;
+margin-bottom: 128px;
 }
 
 .d-more__title {
@@ -324,3 +359,68 @@ margin-bottom: 64px;
 .d-more-card__box-img img {
     width: 100%;
 }
+
+/* Quinta sezione (partners) */
+.partners__title {
+    margin-top: 48px;
+    font-size: 32px;
+}
+
+.container-small h2 + h2 {
+    margin-top: 0;
+    margin-bottom: 48px;
+}
+
+.partners .container-small {
+    margin-bottom: 128px;
+}
+
+.partners__static-carousel {
+    display: flex;
+}
+
+.carousel__column {
+    width: calc(100% / 3);
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.carousel__item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    aspect-ratio: 1;
+}
+
+.carousel__item svg {
+    width: 100px;
+    height: auto;
+    fill: white;
+}
+
+.carousel-central {
+    padding: 40px;
+    background-color: #f5f5f5;
+}
+
+.carousel-central__blockquote {
+    font-size: 12px;
+    font-weight: 300;
+    margin-bottom: 24px;
+}
+
+.carousel-central__blockquote:before {
+    content:"";
+    height: 2px;
+    width: 48px;
+    background-color: #DBDBDB;
+    display: block;
+    margin-bottom: 8px;
+}
+
+.carousel-central q {
+    font-size: 12px;
+    font-weight: 300;
+}
+
