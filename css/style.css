@@ -27,6 +27,12 @@ ul, ol, menu {
     display: block;
 }
 
+.button--white {
+    color: black;
+    border: 1px solid currentColor;
+    display: inline-block;
+}
+
 .plan-card__specifics li + li {
     margin: 24px 0;
 }
@@ -47,6 +53,7 @@ ul, ol, menu {
 
 .header__logo-box {
     padding: 24px 0;
+    flex-shrink: 0;
 }
 
 .header__logo {
@@ -57,6 +64,7 @@ ul, ol, menu {
 header a {
     text-decoration: none;
     color: currentColor;
+    white-space: nowrap;
 }
 
 header nav {
@@ -79,7 +87,7 @@ header nav {
 }
 
 main {
-    padding-top: 85px;
+    padding-top: 88px;
 }
 
 .container-small {
@@ -96,7 +104,7 @@ main {
     padding: 16px 24px;
 }
 
-/* Inizio Hero */
+/* Inizio hero */
 .hero {
     background-color: #b4d0e7;
     margin-bottom: 112px;
@@ -104,7 +112,7 @@ main {
 
 .hero__title {
     text-align: center;
-    font-size: 56px;
+    font-size: 72px;
     padding: 40px 0;
     font-weight: 800;
 }
@@ -112,19 +120,29 @@ main {
 .hero__card {
     display: flex;
     position: relative;
+    width: 100%;
 }
 
 .hero-card__description {
-    width: 40%;
+    width: 35%;
     display: flex;
     flex-direction: column;
     gap: 24px;
-    align-items: flex-start;
+    aspect-ratio: 6/5;
+}
+
+.hero-card__button {
+    align-self: flex-start;
+}
+
+.hero-card__arrow {
+    align-items: flex-end;
 }
 
 .hero-card__image {
     position: absolute;
-    left: 40%;
+    width: 65%;
+    right: 0;
     top: 0;
 }
 
@@ -133,8 +151,8 @@ main {
 }
 
 .hero-card__description i {
-    display: inline-block;
-    padding-top: 20px;
+    font-size: 64px;
+    margin-top: auto;
 }
 
 /* Inizio seconda sezione (business plans) */
@@ -143,8 +161,13 @@ main {
 }
 
 .business-plan__card {
-    border: 1px solid black;
+    border: 1px solid #DBDBDB;
     width: calc((100% - 64px) / 3);
+    font-size: 14px;
+}
+
+.plan-card__head {
+    min-height: 360px;
 }
 
 .business-plan__title {
@@ -156,8 +179,12 @@ main {
     padding: 32px 0;
 }
 
+.billing-type label + input {
+    margin-left: 48px;
+}
+
 .plan-card__target {
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid #DBDBDB;
     display: flex;
     justify-content: center;
     padding: 10px 0;
@@ -188,7 +215,7 @@ main {
 }
 
 .plan-card__duration {
-    font-style: italic;
+    color: grey;
     padding-bottom: 32px;
 }
 
@@ -205,8 +232,8 @@ main {
 .plan-card__highlights:before {
     content:"";
     height: 2px;
-    width: 32px;
-    background-color: grey;
+    width: 48px;
+    background-color: #DBDBDB;
     display: block;
     margin-bottom: 8px;
 }
@@ -227,15 +254,43 @@ main {
 
 .plan-card__big {
     flex-basis: 100%;
+    margin-bottom: 120px;
 }
 
-.plan-card__container{
-    position: relative;
+.plan-card-lg__description {
+    flex-grow: 1;
 }
 
-.plan-card__big .button {
-    position: absolute;
-    right: 24px;
-    top: 24px;
-    padding: 12px 32px;
+.plan-card-lg__row {
+    display: flex;
+}
+
+.plan-card-lg__button-box {
+    width: calc(100% / 3);
+}
+
+/* Terza sezione (find a partner */
+.find-partner__card {
+    display: flex;
+    gap: 40px;
+}
+
+.find-partner__box-img {
+    width: calc(100% /3 *2);
+}
+
+.find-partner__description {
+    width: calc(100% / 3);
+}
+
+.find-partner__box-img img {
+    width: 100%;
+}
+
+.find-partner__title {
+    margin-bottom: 24px;
+}
+
+.find-partenr__text {
+    margin-bottom: 40px;
 }
