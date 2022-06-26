@@ -383,6 +383,7 @@ margin-bottom: 128px;
     width: calc(100% / 3);
     display: flex;
     flex-wrap: wrap;
+    aspect-ratio: 1;
 }
 
 .carousel__item {
@@ -402,21 +403,28 @@ margin-bottom: 128px;
 .carousel-central {
     padding: 40px;
     background-color: #f5f5f5;
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+}
+
+.carousel-central svg {
+    min-width: 128px;
+    width: 256px;
 }
 
 .carousel-central__blockquote {
     font-size: 12px;
     font-weight: 300;
-    margin-bottom: 24px;
 }
 
 .carousel-central__blockquote:before {
     content:"";
     height: 2px;
-    width: 48px;
+    width: 64px;
     background-color: #DBDBDB;
     display: block;
-    margin-bottom: 8px;
+    margin-bottom: 48px;
 }
 
 .carousel-central q {
@@ -424,3 +432,97 @@ margin-bottom: 128px;
     font-weight: 300;
 }
 
+/* Sesta sezione (free trial) */
+.free-trial--background {
+    background-color: #b4d0e7;
+}
+
+.free-trial {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.trial__title {
+    font-size: 32px;
+    color: #5d0021;
+    width: 40%;
+    padding: 120px 0;
+}
+
+.trial__button {
+    color: black;
+    background-color: white;
+    padding: 12px 24px;
+}
+
+/* Settima sezione (faq) */
+.faq__title {
+    font-size: 32px;
+    padding: 120px 0 24px 0;
+}
+
+.faqs__item {
+    padding: 24px 0;
+    border-top: 1px solid lightgrey;
+}
+
+.faqs__item:last-child {
+    border-bottom: 1px solid lightgrey;
+    margin-bottom: 104px
+}
+
+.faqs__item div {
+    display: flex;
+    justify-content: space-between;
+}
+
+.faqs__item p {
+    font-weight: 700;
+}
+
+.faqs__item svg {
+    margin-right: 24px;
+}
+
+/* footer */
+footer {
+    background-color: black;
+    color: white;
+}
+
+.footer__row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer__item {
+    flex-basis: 20%;
+}
+
+.ft-item__title {
+    padding: 32px 0;
+    margin-top: 56px;
+}
+
+.footer__item li {
+    font-size: 12px;
+}
+
+.footer__item li + li {
+    padding-top: 24px;
+}
+
+.set-language {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+}
+
+.footer__row::after {
+    display: block;
+    content: "";
+    border: 1px solid lightgrey;
+    width: 80px;
+    margin: 80px 0;
+}
