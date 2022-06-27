@@ -11,7 +11,12 @@ ul, ol, menu {
 }
 
 /* Modifiers */
-.marginleft--auto {
+.container--lg {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header-linkbox__last {
     margin-left: auto;
 }
 
@@ -98,6 +103,7 @@ header a {
     text-decoration: none;
     color: currentColor;
     white-space: nowrap;
+    padding: 8px;
 }
 
 header nav {
@@ -123,13 +129,8 @@ main {
     padding-top: 88px;
 }
 
-.container-small {
+.container {
     max-width: 1000px;
-    margin: 0 auto;
-}
-
-.container-big {
-    max-width: 1200px;
     margin: 0 auto;
 }
 
@@ -144,7 +145,6 @@ main {
 }
 
 .hero__title {
-    text-align: center;
     font-size: 72px;
     padding: 40px 0;
     font-weight: 800;
@@ -153,7 +153,6 @@ main {
 .hero__card {
     display: flex;
     position: relative;
-    width: 100%;
 }
 
 .hero-card__description {
@@ -189,10 +188,6 @@ main {
 }
 
 /* Inizio seconda sezione (business plans) */
-.business-plan {
-    display: flex;
-}
-
 .business-plan__card {
     border: 1px solid #DBDBDB;
     width: calc((100% - 64px) / 3);
@@ -204,7 +199,7 @@ main {
 }
 
 .business-plan__title {
-    font-size: 24px;
+    font-size: 32px;
     padding: 24px 0;
 }
 
@@ -362,16 +357,14 @@ margin-bottom: 128px;
 
 /* Quinta sezione (partners) */
 .partners__title {
-    margin-top: 48px;
     font-size: 32px;
 }
 
-.container-small h2 + h2 {
-    margin-top: 0;
+.container h2 {
     margin-bottom: 48px;
 }
 
-.partners .container-small {
+.partners .container {
     margin-bottom: 128px;
 }
 
