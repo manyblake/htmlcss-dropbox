@@ -49,7 +49,7 @@ menu {
 }
 
 .carousel__item--lightgreen {
-  background-color: #d1e9cd;
+  background-color: #a2d39b;
 }
 
 .carousel__item--reddishpurple {
@@ -78,6 +78,20 @@ menu {
 
 .carousel__item--yellow {
   background-color: #ffd830;
+}
+
+/* hover */
+footer a:hover,
+header a:hover:not([class~="button"]) {
+  text-decoration: underline;
+}
+
+[class~="button"]:hover {
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.carousel__item:hover {
+  border-color: rgba(255, 255, 255, 0.5);
 }
 
 /* Main header */
@@ -186,7 +200,7 @@ main {
 }
 
 .hero-card__description i {
-  font-size: 64px;
+  font-size: 56px;
   margin-top: auto;
 }
 
@@ -299,14 +313,6 @@ main {
   max-width: 650px;
 }
 
-/* .plan-card-lg__description {
-  flex-grow: 1;
-}
-
-.plan-card-lg__row {
-  display: flex;
-} */
-
 .plan-card-lg__button-box a {
   padding: 12px 44px;
 }
@@ -373,6 +379,7 @@ main {
 /* Quinta sezione (partners) */
 .partners__title {
   font-size: 32px;
+  margin-bottom: 48px;
 }
 
 .partners .container {
@@ -397,10 +404,11 @@ main {
   flex-wrap: wrap;
   width: 50%;
   aspect-ratio: 1;
+  border: 16px solid transparent;
 }
 
 .carousel__item svg {
-  width: 50%;
+  width: 55%;
   height: auto;
   fill: white;
 }
@@ -479,6 +487,7 @@ main {
 .faqs__item {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .faqs__item p {
